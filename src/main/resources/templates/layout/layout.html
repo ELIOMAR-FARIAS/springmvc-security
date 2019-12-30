@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Sistema de controle de vendas EDIGITAL</title>
+
+<link href="/css/materialize.css" type="text/css" rel="stylesheet">
+<link href="/css/style.css" type="text/css" rel="stylesheet">
+
+<!-- Custome CSS-->
+<link href="/css/custom/custom.css" type="text/css" rel="stylesheet">
+
+<!-- INCLUDED PLUGIN CSS ON THIS PAGE -->
+<link href="/vendors/perfect-scrollbar/perfect-scrollbar.css"
+	type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<header th:replace="fragments/header :: cabecalho">
+		<div>header</div>
+	</header>
+
+	<div id="main">
+		<div class="wrapper">
+			<nav th:replace="fragments/sidebar :: nav-sidebar">
+				<span>menu</span>
+			</nav>
+			<section layout:fragment="corpo" id="content">
+				<div class="container">
+					<div class="divider"></div>					
+					
+				</div>
+			</section>
+		</div>
+	</div>
+	<footer th:replace="fragments/footer :: rodape">
+		<div>footer</div>
+	</footer>
+
+	<!-- ================================================
+	 Scripts
+    ================================================ -->
+	<!-- jQuery Library -->
+	<script type="text/javascript" src="/vendors/jquery-3.2.1.min.js"></script>
+	
+	<!-- Style configuração do TOASTS -->
+		<script type="text/javascript" src="/style.js"></script>
+		
+	<!--materialize js-->	
+	<script type="text/javascript" src="/js/materialize.min.js"></script>
+	
+	<!--scrollbar-->
+	<script type="text/javascript" src="/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+	
+	<!--plugins.js - Some Specific JS codes for Plugin Settings-->
+	<script type="text/javascript" src="/js/plugins.js"></script>
+	
+	<!--custom-script.js - Add your own theme custom JS-->
+	<script type="text/javascript" src="/js/custom-script.js"></script>
+</body>
+</html>
